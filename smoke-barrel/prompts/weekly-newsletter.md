@@ -14,7 +14,7 @@ Generate Smoke & Barrel Weekly newsletter for Eric's whisky/cigar crew.
 
 ## Required Reading
 
-Before generating, READ these files:
+Before generating, READ these files from `/Users/cleo/clawd/cleo-newsletters/smoke-barrel/config/`:
 - `crew-profiles.md` - Individual crew member preferences
 - `crew-traditions.md` - Garage HQ rituals and history
 - `wine-section-guide.md` - Wine recommendation guidelines
@@ -279,7 +279,7 @@ Email will be sent Saturday to:
 
 ## Reference Files Location
 
-All reference files in `/Users/cleo/clawd/smoke-barrel/`:
+All reference files in `/Users/cleo/clawd/cleo-newsletters/smoke-barrel/config/`:
 - crew-profiles.md
 - crew-traditions.md  
 - wine-section-guide.md

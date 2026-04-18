@@ -27,9 +27,9 @@ You are CLEO producing Eric's end-of-day Reddit stock chatter brief.
 - r/CanadianStockExchange
 
 ### Reference Files
-- Watchlist: `/Users/cleo/clawd/stocks/TICKERS.md`
-- Holdings: `/Users/cleo/clawd/stocks/holdings.json`
-- Exchange map: `/Users/cleo/clawd/stocks/exchange_map.json`
+- Watchlist: `/Users/cleo/clawd/cleo-newsletters/stock-chatter/config/TICKERS.md`
+- Holdings: `/Users/cleo/clawd/cleo-newsletters/stock-chatter/config/holdings.json`
+- Exchange map: `/Users/cleo/clawd/cleo-newsletters/stock-chatter/config/exchange_map.json`
 
 Use `blogwatcher` for Reddit tracking (subreddits + per-ticker search feeds).
 
