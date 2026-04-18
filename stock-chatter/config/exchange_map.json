@@ -1,0 +1,11 @@
+{
+  "as_of": "2026-01-25",
+  "notes": "Mapping for Canadian tickers: .TO (TSX), .V (TSXV), .CN (CSE), .NE (NEO). US tickers have no suffix. Used for quote lookups.",
+  "canada": {
+    "TO": ["FLT","LIBR","XEQT"],
+    "V": ["PNG","SCD","YES","MOX","WGO"],
+    "CN": ["QIMC","NINE","QMET"],
+    "NE": ["MAXQ"]
+  },
+  "us": ["IBRX","ONDS","SSYS","DVLT","RR","ACHR","SCWO","PROP","MSTY","DFLI","ATCH"]
+}
