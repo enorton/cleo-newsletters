@@ -131,35 +131,76 @@ ONE paragraph
 - Keep aspirational and inspiring
 - No logistics, costs, or step-by-step details
 
-## Whiskybase Integration
+## Link Verification Rules — CRITICAL
 
-**MANDATORY** for EVERY whisky mentioned:
-- Search Whiskybase for the bottle
-- Include rating (e.g., "86/100 on Whiskybase")
-- Include link to Whiskybase page
-- Use ratings to validate quality/interest
+**NO LINK goes in the newsletter unless it has been fetched and confirmed to return a real product page.**
+
+A broken link is worse than no link. If a URL cannot be verified, either omit the link or write "search [product name] at [site]" as plain text instead.
+
+### Whiskybase Links
+- Search: `https://www.whiskybase.com/search?q=BOTTLE+NAME`
+- Fetch the search results page
+- Find the exact product listing URL (e.g. `https://www.whiskybase.com/whiskies/whisky/12345/name`)
+- Fetch THAT URL and confirm it loads a real bottle page with a rating
+- Only then include the link and rating
+- **Never construct a Whiskybase URL by guessing** — always search first
+
+### LCBO Links
+- Search: `https://www.lcbo.com/en/catalogsearch/result/#q=BOTTLE+NAME`
+- Fetch the search results and find the exact product page URL
+- Fetch the product page and confirm: product name matches, item is IN STOCK (not "coming soon" or out of stock)
+- Confirm price on the actual product page
+- Only include the link if the product page loads and shows available stock
+- **If not confirmed in stock: do not recommend it**
+
+### Cigar Chief Links
+- Base URL: **https://cigarchief.com** (NOT cigar-chief.com — that 404s)
+- Search: `https://cigarchief.com/search?q=CIGAR+NAME`
+- Fetch results, find exact product page
+- Fetch product page and confirm: correct cigar, in stock, price visible
+- Only include link if confirmed
+- **If search returns no results or product is out of stock: pick a different cigar**
+
+### Cigar Aficionado Links
+- Use for ratings only: `https://www.cigaraficionado.com/cigar/BRAND-NAME`
+- Fetch and confirm the rating page loads
+- Include rating score + review snippet if available
+
+### World Watch — No Local Availability Required
+- Whiskybase link still required and must be verified
+- Note region/country where available (duty free, UK, US, etc.)
+- Do not fabricate retailer links for international bottles
 
 ## Research Sources
 
 ### Required Checks
-- **Whiskybase.com** - Ratings and reviews for all bottles
-- **https://booze-feed.ca/whisky** - New LCBO whisky arrivals
-- **https://www.cigaraficionado.com** - Cigar ratings, reviews, releases
+- **Whiskybase.com** - Ratings and reviews (links must be verified)
+- **https://booze-feed.ca/whisky** - New LCBO whisky arrivals (use as discovery only, verify on LCBO)
+- **https://www.cigaraficionado.com** - Cigar ratings and reviews
+- **https://cigarchief.com** - Cigar availability (correct URL)
 - Gmail newsletters - Distillery releases, industry news
-- **LCBO website** - Availability and pricing verification
-- **BSW Liquors** - Availability and pricing verification
-- **Cigar Chief** - Cigar availability verification
+- **LCBO website** - Availability and pricing (must confirm in stock)
 
 ## Verification Workflow
 
-1. Research potential products (newsletters, Whiskybase, booze-feed, Cigar Aficionado)
-2. For Special Bottles: Check booze-feed.ca, VERIFY LCBO/BSW availability
-3. **CRITICAL:** Verify bourbon availability (US tariffs = currently blocked at LCBO)
-4. For Smoke Report: Check Cigar Aficionado ratings, VERIFY Cigar Chief availability
-5. For World Watch: Find Whiskybase ratings, research availability
-6. Cross-check Eric's collection.md (avoid duplicate recommendations)
-7. Check featured-history.json (avoid repeats)
-8. Generate newsletter with verified, researched content
+1. Identify candidate products from booze-feed.ca, newsletters, Whiskybase new releases
+2. **For each product: fetch and verify the exact URL before including it**
+3. LCBO bottles: confirm product page loads + in stock + correct price
+4. Cigar Chief (cigarchief.com): confirm product page loads + in stock
+5. Whiskybase: confirm bottle page loads + rating visible
+6. **If any link fails verification: skip that product, pick another**
+7. Cross-check Eric's collection.md (avoid duplicates)
+8. Check featured-history.json (avoid repeats)
+9. Only include verified products with working links in the final newsletter
+
+### Link Format in HTML
+```html
+<!-- Good: verified URL -->
+<a href="https://cigarchief.com/products/bolivar-royal-corona">Bolivar Royal Corona</a>
+
+<!-- If URL can't be verified: plain text instead -->
+Bolivar Royal Corona (search at cigarchief.com)
+```
 
 ## Quality Standards
 
