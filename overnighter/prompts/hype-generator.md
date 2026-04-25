@@ -21,14 +21,21 @@ Ask these questions in ONE message. Keep it conversational, not a form.
 1. **Where?** (Garage HQ / cottage / away — and whose place)
 2. **When?** (Date + what time does it kick off)
 3. **Who's in?** (All four or a subset — Eric, Hal, James, Carl)
-4. **What's anyone bringing?** (Bottles, cigars, food — anything already planned)
-5. **Food plan?** (Carl BBQ / order in / potluck / TBD)
-6. **What's on that night?** (Sports, movie, nothing — any occasion)
-7. **Theme or vibe?** (Casual hang / milestone / whisky focus / anything goes)
-8. **Anything else I should know?**
+4. **What's anyone bringing?** (Bottles, cigars — anything already committed)
+5. **Food — what exactly?** (Be specific: what's being cooked, who's cooking, what cuts/dishes)
+6. **Entertainment?** (Sports, movie, specific weird internet content — what's actually planned)
+7. **Theme or occasion?** (Milestone, app launch, just because, etc.)
+8. **Anything else confirmed?** (Guests, special bottles, activities)
 ```
 
 Wait for answers before generating.
+
+**CRITICAL: Do not assume or invent ANY details not explicitly provided.**
+- If food isn't specified → ask, don't guess
+- If entertainment isn't specified → ask or leave vague
+- If bottles aren't confirmed → don't name specific bottles as confirmed
+- If timing details aren't given → ask
+- **When in doubt: ask. A clarifying question is better than a correction email.**
 
 ---
 
