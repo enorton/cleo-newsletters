@@ -1,4 +1,4 @@
-# Calian Daily Executive Intelligence Brief — Prompt
+# Calian Weekly Executive Intelligence Brief — Prompt
 
 ## Role
 
@@ -7,6 +7,8 @@ You are an executive intelligence analyst. Produce a **daily intelligence brief*
 **Three audiences:** Executive leadership · Sales/BD · Marketing/Communications
 
 **Goal:** Surface market signals, policy changes, procurement activity, competitor moves, and emerging trends affecting Calian's growth and positioning. Not a news summary — an intelligence product.
+
+**Coverage window:** Past 7 days only. Do not include items older than 7 days. If a category has no new developments this week, say so — do not recycle prior week content.
 
 ---
 
@@ -132,11 +134,11 @@ Run searches across these patterns before writing anything:
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 14px; color: #1a1a2e; background: #fff; line-height: 1.55; }
-  .wrapper { max-width: 820px; margin: 0 auto; padding: 24px; }
+  body { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 14px; color: #1a1a2e; background: #f5f6f8; line-height: 1.55; }
+  .wrapper { max-width: 820px; margin: 0 auto; padding: 24px; background: #fff; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
 
   /* Nav */
-  .nav { background: #0b2545; padding: 10px 16px; border-radius: 6px; margin-bottom: 24px; position: sticky; top: 0; z-index: 100; }
+  .nav { background: #0b2545; padding: 10px 16px; border-radius: 0; margin-bottom: 24px; position: sticky; top: 0; z-index: 100; border-bottom: 3px solid #e63327; }
   .nav a { color: #90caf9; font-size: 12px; font-weight: 600; text-decoration: none; margin-right: 16px; letter-spacing: 0.5px; }
   .nav a:hover { color: #fff; }
 
@@ -147,11 +149,11 @@ Run searches across these patterns before writing anything:
 
   /* Section */
   .section { margin-bottom: 28px; }
-  .section-title { font-size: 13px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #0b2545; border-left: 4px solid #0b2545; padding-left: 10px; margin-bottom: 14px; }
+  .section-title { font-size: 13px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #0b2545; border-left: 4px solid #e63327; padding-left: 10px; margin-bottom: 14px; }
 
   /* Signals dashboard */
   .signals-table { width: 100%; border-collapse: collapse; font-size: 13px; }
-  .signals-table th { background: #0b2545; color: #fff; padding: 8px 10px; text-align: left; font-weight: 600; font-size: 12px; }
+  .signals-table th { background: #0b2545; color: #fff; padding: 8px 10px; text-align: left; font-weight: 600; font-size: 12px; border-bottom: 2px solid #e63327; }
   .signals-table td { padding: 8px 10px; border-bottom: 1px solid #e8edf2; vertical-align: top; }
   .signals-table tr:hover td { background: #f5f8ff; }
   .rank { font-weight: 700; color: #0b2545; text-align: center; width: 30px; }
@@ -194,7 +196,9 @@ Run searches across these patterns before writing anything:
   .notice { background: #fffbeb; border-left: 4px solid #f59e0b; padding: 10px 14px; font-size: 12px; color: #78350f; margin-bottom: 16px; border-radius: 0 4px 4px 0; }
 
   /* Footer */
-  footer { margin-top: 32px; padding-top: 16px; border-top: 2px solid #e5e7eb; font-size: 11px; color: #9ca3af; }
+  footer { margin-top: 32px; padding-top: 16px; border-top: 3px solid #0b2545; font-size: 11px; color: #9ca3af; background: #f5f6f8; padding: 16px; }
+  .calian-footer { display:flex; align-items:center; justify-content:space-between; }
+  .calian-footer a { color: #1a56c4; text-decoration: none; }
 </style>
 </head>
 <body>
@@ -219,11 +223,23 @@ Run searches across these patterns before writing anything:
 
   <!-- HEADER -->
   <div class="brief-header">
-    <h1>Calian Intelligence Brief</h1>
-    <div class="meta">DATE · Coverage: COVERAGE_WINDOW · Calian Executive, Sales, and Marketing</div>
+    <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:12px;">
+      <img src="https://www.calian.com/app/uploads/sites/9/2024/01/Calian-Logo-Reversed.png" alt="Calian" style="height:36px;" onerror="this.style.display='none'">
+      <span style="font-size:11px; color:#6b7280; text-transform:uppercase; letter-spacing:1px;">Weekly Intelligence Brief</span>
+    </div>
+    <h1>Executive Intelligence Brief</h1>
+    <div class="meta">DATE · Coverage: past 7 days · Executive · Sales · Marketing</div>
+    <div style="margin-top:8px; height:3px; background: linear-gradient(90deg, #0b2545 0%, #1a56c4 50%, #e63327 100%); border-radius:2px;"></div>
   </div>
 
   <!-- SECTIONS GO HERE -->
+
+  <footer>
+    <div class="calian-footer">
+      <span>Questions? Reply to this email — CLEO will respond.</span>
+      <span>— CLEO · <a href="https://www.calian.com">calian.com</a></span>
+    </div>
+  </footer>
 
 </div>
 </body>
@@ -381,7 +397,7 @@ gog gmail send \
   --account cleo.clawdbot@gmail.com \
   --no-input \
   --to eric.norton@calian.com,pierre.hage@calian.com \
-  --subject "Calian Intelligence Brief — $(date +'%A, %B %d, %Y')" \
+  --subject "Calian Intelligence Brief — Week of $(date +'%B %d, %Y')" \
   --body-html "$(cat $FILE)"
 ```
 
@@ -398,5 +414,6 @@ gog gmail send \
 
 ## Schedule
 
-**Monday–Friday, 8:30 AM EST**
+**Monday only, 8:00 AM EST**
+**Coverage window: past 7 days — new items only**
 **Model: Opus 4.7**
