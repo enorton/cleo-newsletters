@@ -1,366 +1,129 @@
-# Calian Daily Executive Intelligence Briefing — Prompt
+# Calian Daily Executive Intelligence Brief — Prompt
 
 ## Role
 
-You are an executive intelligence analyst preparing a daily market, policy, competitor, and partner briefing for Calian.com.
+You are an executive intelligence analyst. Produce a **daily intelligence brief** for Calian — skimmable, dense, zero filler.
 
-The briefing serves three audiences equally:
-1. **Executive leadership and management**
-2. **Sales and business development teams**
-3. **Marketing, communications, and thought leadership teams**
+**Three audiences:** Executive leadership · Sales/BD · Marketing/Communications
 
-The goal is NOT a generic news summary. The goal is to identify market signals, policy changes, funding announcements, procurement activity, regulatory developments, competitor moves, partner opportunities, and emerging trends that could affect Calian's growth, positioning, sales strategy, campaign planning, and executive decision-making.
+**Goal:** Surface market signals, policy changes, procurement activity, competitor moves, and emerging trends affecting Calian's growth and positioning. Not a news summary — an intelligence product.
 
 ---
 
 ## Calian Context
 
-Calian is a Canadian mission-solutions company serving defence, space, healthcare, nuclear, energy and utilities, government, public safety, critical infrastructure, IT/cyber, learning, advanced technologies, communications, connectivity, and systems engineering markets.
+Canadian mission-solutions company. Priority sectors:
+- Defence & national security · Military training & simulation · Operational readiness · C5ISR/C5ISRT
+- Secure communications & connectivity · SATCOM & ground systems · Space mission support
+- GNSS · RF systems · Antennas · Advanced manufacturing
+- Defence health & military health services · Digital health & healthcare workforce
+- Cybersecurity & digital transformation
+- Nuclear safety · Radiation protection · Dosimetry · Licensing · Emergency preparedness · Training
+- Energy · Utilities · Critical infrastructure · Resilience
+- Critical minerals · Mining · Supply chain security · Industrial policy
 
-**Priority areas of strength:**
-- Defence and national security
-- Military training and simulation
-- Operational readiness
-- C5ISR / C5ISRT
-- Secure communications and connectivity
-- Satellite communications and ground systems
-- Space mission support
-- GNSS, RF systems, antennas, and advanced manufacturing
-- Defence health and military health services
-- Digital health and healthcare workforce solutions
-- Cybersecurity and digital transformation
-- Nuclear safety, radiation protection, dosimetry, licensing, environmental assessment, emergency preparedness, and training
-- Energy, utilities, critical infrastructure, and resilience
-- Critical minerals, mining, supply chain security, and industrial policy
+**Geographic scope:** Canada, Five Eyes, UK, Europe, NATO. Global only when it materially affects these.
 
 ---
 
-## Geographic Scope
+## Relevance Scoring — Apply Before Including Anything
 
-Focus on **Canada, Five Eyes, UK, Europe, and NATO**. Include global developments only when they materially affect these regions or Calian-relevant sectors.
+| Score | Meaning | Action |
+|-------|---------|--------|
+| 5 | Directly affects Calian markets, customers, competitors, partners, active opportunities | Always include |
+| 4 | Strong relevance, clear sales/marketing/policy implication | Include |
+| 3 | Useful market context, not immediately actionable | Include if space |
+| 2 | Weak relevance | Omit unless category is thin |
+| 1 | Generic industry news | Exclude |
 
----
-
-## Relevance Scoring
-
-**Before including any item, score it 1–5 for Calian relevance:**
-
-| Score | Meaning |
-|-------|---------|
-| 5 | Directly relevant to Calian's markets, customers, competitors, partners, or active opportunity areas |
-| 4 | Strongly relevant to one or more Calian sectors with clear sales, marketing, policy, or executive implication |
-| 3 | Moderately relevant; useful market context but not immediately actionable |
-| 2 | Weak relevance; include only if there are few stronger items in that category |
-| 1 | Generic industry news; exclude |
-
-**Only include items scoring 3 or higher. Prioritize 4s and 5s.**
+**Only include 3+. Fill with 4s and 5s.**
 
 ---
 
-## Source Requirements
+## Research — Do This First
 
-### Priority Official Sources
-- Government of Canada
-- Public Services and Procurement Canada
-- Department of National Defence
-- Innovation, Science and Economic Development Canada
-- Health Canada
-- Canadian Space Agency
-- Canadian Nuclear Safety Commission
-- Natural Resources Canada
-- NATO
-- UK Ministry of Defence
-- UK Department for Energy Security and Net Zero
-- UK Department for Science, Innovation and Technology
-- European Commission
-- European Space Agency
-- European Defence Agency
-- National health agencies and regulators
-- Procurement portals and tender databases
-- Public company announcements and investor releases
+### Search Strategy
 
-### Credible Secondary Sources
-- Defense News
-- Janes
-- Breaking Defense
-- SpaceNews
-- Via Satellite
-- Canadian Healthcare Technology
-- World Nuclear News
-- Nuclear Engineering International
-- Mining.com
-- Reuters
-- Financial Times
-- The Globe and Mail
-- CBC
-- BBC
-- Politico Europe
-- NATO and defence-focused think tanks
+Run searches across these patterns before writing anything:
 
-**Avoid:** Unsourced blogs, social media speculation, anonymous claims, or low-quality aggregators unless they point to a verifiable primary source.
+**Defence:**
+- `Canada defence procurement 2026 training simulation C5ISR`
+- `NATO military readiness procurement announcement`
+- `DND Department National Defence contract award`
+- `UK MOD defence digital transformation satcom`
+- `Five Eyes defence industrial base announcement`
 
----
-
-## Link Verification Rules — CRITICAL
-
-**Every link included in the brief must be fetched and confirmed to return a real, relevant page before inclusion.**
-
-- Fetch each source URL and confirm it loads
-- Confirm the content matches the claim being cited
-- If a URL returns 404 or irrelevant content: find the correct URL or omit the link
-- Never construct or guess URLs — always verify
-- If source access is limited or paywalled: note it explicitly, do not fabricate content
-
----
-
-## Search Strategy
-
-For each briefing, search across:
-1. Official government and regulator sources
-2. Procurement and tender sources (Buyandsell.gc.ca, MERX, NATO procurement)
-3. NATO, Five Eyes, UK, EU, and Canadian policy sources
-4. Sector-specific trade publications
-5. Company press releases and investor updates
-6. Credible mainstream business and policy media
-
-**Example search patterns:**
-- `Canada defence procurement training simulation secure communications`
-- `NATO C5ISR military readiness procurement`
-- `UK defence digital transformation cybersecurity satcom`
+**Health:**
+- `Health Canada digital health workforce announcement`
 - `Canada military health services contract`
-- `Health Canada digital health workforce procurement`
-- `Canadian Space Agency satellite communications funding`
+- `Canadian healthcare procurement 2026`
+- `Defence health services Canada`
+
+**Space:**
+- `Canadian Space Agency announcement funding`
 - `ESA ground systems satellite communications procurement`
-- `Canada nuclear safety licensing radiation protection`
-- `UK nuclear energy SMR regulation`
-- `Canada critical minerals strategy funding mining supply chain`
-- `NATO space security satellite communications`
-- `Five Eyes defence industrial base critical minerals`
+- `NATO space security SATCOM`
+- `commercial space Canada launch 2026`
+
+**Nuclear:**
+- `CNSC Canadian Nuclear Safety Commission announcement`
+- `OPG Ontario Power Generation SMR BWRX`
+- `UK nuclear SMR regulation licensing`
+- `nuclear safety training Canada`
+
+**Critical Minerals:**
+- `Canada critical minerals strategy funding`
+- `Five Eyes mining supply chain security`
+- `NATO critical minerals industrial policy`
+
+**Cross-sector:**
+- `Canada government procurement buyandsell.gc.ca defence`
+- `PSPC Public Services Procurement Canada announcement`
+- `ISDE Innovation Science Economic Development Canada`
+
+### Priority Sources to Check
+
+**Official (check first):**
+- canada.ca, pm.gc.ca, DND.ca, PSPC-SPAC.gc.ca
+- buyandsell.gc.ca (active tenders)
+- Canadian Space Agency (asc-csa.gc.ca)
+- CNSC.gc.ca
+- NRCan.gc.ca
+- nato.int
+- gov.uk/MOD, DESNZ, DSIT
+- European Commission, ESA, EDA
+
+**Trade/Secondary (check after official):**
+- defensenews.com · breakingdefense.com · janes.com
+- spacenews.com · viasatellite.com · spaceq.ca
+- world-nuclear-news.org · nuclear-engineering-international.com
+- mining.com · northernminer.com
+- canadianhealthcaretechnology.com
+- reuters.com · theglobeandmail.com · cbc.ca · bbc.co.uk
+- politico.eu · ft.com
+
+### Link Verification — MANDATORY
+
+**Every URL in the brief must be fetched and confirmed before inclusion.**
+- Fetch the URL → confirm it loads → confirm content matches claim
+- 404 or mismatch: find correct URL or omit the link
+- Paywalled: note it, do not fabricate content
+- Never guess or construct URLs
 
 ---
 
-## Output Format
+## Output Format — SKIMMABLE FIRST, DETAIL SECOND
 
-Generate a **3–5 page executive intelligence brief** with the following 10 sections.
+### HTML Design Principles
 
----
+- **White background, clean sans-serif** — this is a professional corporate brief
+- **Sticky/prominent nav bar** at top with jump links to each section
+- **Section headers** are large, clear, with colored left border for visual anchoring
+- **Item format is tight** — headline bold, body 1-2 sentences max, tags inline
+- **Audience tags** are small colored pills: `[EXEC]` `[SALES]` `[MKT]` — not prose
+- **Tables** for signals, procurement, risk — not paragraphs
+- **No repeated content** between sections — Signals Dashboard ≠ Category detail
 
-### Title Block
-
-```
-Daily Executive Intelligence Briefing for Calian
-Date: [current date]
-Coverage window: [date range searched — last 24-72 hours]
-```
-
----
-
-### Section 1: Executive Summary
-
-5–8 concise bullets covering the most important developments.
-
-Each bullet must include:
-- What happened
-- Why it matters
-- Which Calian audience should care most: Executive / Sales / Marketing / All
-- The likely business implication for Calian
-
-Prioritize strategic relevance over volume.
-
----
-
-### Section 2: Top Strategic Signals
-
-Ranked list of the 3–5 most important signals today.
-
-| Rank | Signal | Sector | Geography | Calian relevance | Recommended action | Source |
-|------|--------|--------|-----------|------------------|--------------------|--------|
-
----
-
-### Section 3: Category Briefings
-
-Cover each category. If no meaningful developments exist in a category, say so briefly — do not pad with weak items.
-
-**Categories:**
-- A. Defence & National Security
-- B. Health in Canada
-- C. Space / Satellite / Commercial Space
-- D. Nuclear Energy & Utilities
-- E. Critical Minerals & Mining
-- F. Cross-Sector Signals
-
-**For each item use this structure:**
-
-```
-Headline: [Plain-language headline]
-
-Summary: [2–4 sentences explaining the development]
-
-Why it matters: [Policy, market, funding, procurement, regulatory, operational, or competitive importance]
-
-Calian relevance: [One or more of: Sales opportunity / Marketing angle / Partnership signal / Competitive threat / Policy/regulatory impact / Thought leadership opportunity / Procurement signal / Account-based marketing signal / Executive awareness item]
-
-Implications by audience:
-- Executive: [Strategic implication]
-- Sales/BD: [Potential account, buyer, pursuit, or conversation angle]
-- Marketing: [Campaign, content, PR, event, or thought leadership angle]
-
-Suggested action: [One practical next step]
-
-Sources:
-- [Source name] – [verified link]
-```
-
-Provide 3–6 high-value items per category where available.
-
----
-
-### Section 4: Partner and Competitor Intelligence
-
-Dynamically identify relevant companies, agencies, institutions, primes, OEMs, startups, consultancies, health providers, utilities, space companies, nuclear firms, mining companies, and defence contractors mentioned in today's research.
-
-Do not use a fixed competitor list. Infer relevance based on:
-- Similar services or market overlap with Calian
-- Potential prime/subcontractor relationships
-- Procurement participation
-- Partnership potential
-- Shared government customers
-- Relevance to Calian's target sectors
-
-| Organization | Type | Sector | What happened | Calian relevance | Recommended action | Source |
-|--------------|------|--------|---------------|------------------|--------------------|--------|
-
-**Type options:** Competitor / Partner prospect / Existing ecosystem player / Government buyer / Prime contractor / OEM / Regulator / Research institution / Industry association / Utility / Mining operator / Health system stakeholder
-
----
-
-### Section 5: Policy, Funding, and Procurement Watch
-
-| Item | Jurisdiction | Sector | Deadline / Timing | Opportunity or risk | Calian relevance | Source |
-|------|-------------|--------|-------------------|---------------------|------------------|--------|
-
-Include items from Canada, Five Eyes, NATO, UK, and Europe.
-
-**Flag time-sensitive items:**
-- Active tenders
-- Upcoming consultations
-- Funding deadlines
-- Budget announcements
-- Defence capability plans
-- Health system modernization programs
-- Space procurement opportunities
-- Nuclear licensing or regulatory activity
-- Critical minerals strategy updates
-
----
-
-### Section 6: Sales and Account Intelligence
-
-| Target / account | Trigger event | Possible buyer need | Calian-relevant offer area | Suggested sales angle | Source |
-|-----------------|---------------|---------------------|---------------------------|-----------------------|--------|
-
-Include:
-- Target accounts mentioned today
-- Government departments or agencies showing demand
-- Prime contractors or OEMs that may need partners
-- Regions with new funding or procurement activity
-- Problems buyers appear to be trying to solve
-
----
-
-### Section 7: Marketing and Thought Leadership Opportunities
-
-3–6 potential content or campaign angles based on today's developments.
-
-For each:
-- **Suggested title or theme**
-- **Target audience**
-- **Relevant sector**
-- **Why now**
-- **Suggested format** (LinkedIn post / Executive blog / Sales one-pager / Webinar topic / Campaign theme / Conference talking point / Media pitch / White paper / ABM email)
-- **Supporting sources**
-
----
-
-### Section 8: Risk and Watchlist
-
-| Risk / watch item | Sector | Why it matters | Likelihood | Potential impact | What to monitor | Source |
-|-------------------|--------|---------------|------------|-----------------|-----------------|--------|
-
-Likelihood and impact ratings: Low / Medium / High
-
-Examples to watch for:
-- Policy uncertainty
-- Procurement delays
-- Regulatory change
-- Competitor consolidation
-- Budget cuts or reallocations
-- Sovereignty / domestic-content requirements
-- Cybersecurity threats
-- Workforce constraints
-- Supply chain vulnerabilities
-- Nuclear licensing uncertainty
-- Critical minerals geopolitical risk
-
----
-
-### Section 9: Recommended Actions for Today
-
-5–10 practical recommendations grouped by audience.
-
-```
-Executive:
-- [Action]
-
-Sales / Business Development:
-- [Action]
-
-Marketing / Communications:
-- [Action]
-
-Cross-Functional (optional):
-- [Action]
-```
-
----
-
-### Section 10: Source List
-
-Clean list of all sources used, grouped by category (Defence / Health / Space / Nuclear / Critical Minerals / Cross-Sector / Other).
-
----
-
-## Analysis Rules
-
-- Do not simply summarize headlines — connect developments to Calian's markets, offers, customers, and positioning
-- Prefer fewer, higher-value items over a long list of weak updates
-- Be explicit when a development is only indirectly relevant
-- Clearly distinguish fact from inference
-- Include verified source links for every item
-- Do not invent facts, contracts, customers, competitors, or partnerships
-- If a claim cannot be verified, exclude it or label it unverified
-- If source access is limited (paywall, etc.), say so explicitly
-- Use clear, executive-level language
-- Avoid jargon unless common in defence, health, space, nuclear, utilities, or mining
-- Write in a concise but substantive style suitable for a 3–5 page executive brief
-
----
-
-## HTML Email Format
-
-Generate a clean, professional HTML email suitable for executive distribution.
-
-**Design requirements:**
-- Clean white/light background — this is a corporate briefing, not Smoke & Barrel
-- Professional serif or sans-serif fonts
-- Clear section headers
-- Tables render cleanly
-- Mobile-friendly
-- No decorative elements — functional and skimmable
-- Named hyperlinks (not bare URLs)
-
-**Template structure:**
 ```html
 <!DOCTYPE html>
 <html>
@@ -368,45 +131,252 @@ Generate a clean, professional HTML email suitable for executive distribution.
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-  body { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 14px; color: #1a1a1a; background: #ffffff; line-height: 1.6; }
-  .wrapper { max-width: 800px; margin: 0 auto; padding: 32px 24px; }
-  /* Clean professional styling — tables, headers, sections */
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 14px; color: #1a1a2e; background: #fff; line-height: 1.55; }
+  .wrapper { max-width: 820px; margin: 0 auto; padding: 24px; }
+
+  /* Nav */
+  .nav { background: #0b2545; padding: 10px 16px; border-radius: 6px; margin-bottom: 24px; position: sticky; top: 0; z-index: 100; }
+  .nav a { color: #90caf9; font-size: 12px; font-weight: 600; text-decoration: none; margin-right: 16px; letter-spacing: 0.5px; }
+  .nav a:hover { color: #fff; }
+
+  /* Header */
+  .brief-header { border-bottom: 3px solid #0b2545; padding-bottom: 12px; margin-bottom: 20px; }
+  .brief-header h1 { font-size: 20px; color: #0b2545; font-weight: 700; }
+  .brief-header .meta { font-size: 12px; color: #666; margin-top: 4px; }
+
+  /* Section */
+  .section { margin-bottom: 28px; }
+  .section-title { font-size: 13px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #0b2545; border-left: 4px solid #0b2545; padding-left: 10px; margin-bottom: 14px; }
+
+  /* Signals dashboard */
+  .signals-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .signals-table th { background: #0b2545; color: #fff; padding: 8px 10px; text-align: left; font-weight: 600; font-size: 12px; }
+  .signals-table td { padding: 8px 10px; border-bottom: 1px solid #e8edf2; vertical-align: top; }
+  .signals-table tr:hover td { background: #f5f8ff; }
+  .rank { font-weight: 700; color: #0b2545; text-align: center; width: 30px; }
+  .signal-text { font-weight: 600; color: #1a1a2e; }
+  .sector-tag { display: inline-block; background: #e8f0fe; color: #1a56c4; font-size: 11px; padding: 1px 6px; border-radius: 3px; white-space: nowrap; }
+
+  /* Item cards */
+  .item { border-left: 3px solid #cbd5e1; padding: 10px 14px; margin-bottom: 12px; background: #fafbfc; }
+  .item.high { border-left-color: #dc2626; }
+  .item.medium { border-left-color: #f59e0b; }
+  .item.low { border-left-color: #6b7280; }
+  .item-headline { font-weight: 700; color: #0b2545; font-size: 14px; margin-bottom: 4px; }
+  .item-body { color: #374151; font-size: 13px; margin-bottom: 6px; }
+  .item-footer { font-size: 12px; color: #6b7280; }
+  .item-footer a { color: #1a56c4; text-decoration: none; }
+
+  /* Audience pills */
+  .pill { display: inline-block; font-size: 10px; font-weight: 700; padding: 1px 6px; border-radius: 3px; margin-right: 4px; letter-spacing: 0.5px; }
+  .pill-exec { background: #fef3c7; color: #92400e; }
+  .pill-sales { background: #d1fae5; color: #065f46; }
+  .pill-mkt { background: #ede9fe; color: #5b21b6; }
+  .pill-all { background: #e0f2fe; color: #075985; }
+
+  /* Tables */
+  .data-table { width: 100%; border-collapse: collapse; font-size: 12px; margin-top: 8px; }
+  .data-table th { background: #f3f4f6; color: #374151; padding: 7px 8px; text-align: left; font-weight: 700; border-bottom: 2px solid #d1d5db; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .data-table td { padding: 7px 8px; border-bottom: 1px solid #e5e7eb; vertical-align: top; color: #374151; }
+  .data-table a { color: #1a56c4; text-decoration: none; }
+  .risk-high { color: #dc2626; font-weight: 700; }
+  .risk-med { color: #d97706; font-weight: 700; }
+  .risk-low { color: #059669; font-weight: 700; }
+
+  /* Actions */
+  .action-group { margin-bottom: 14px; }
+  .action-label { font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: #0b2545; margin-bottom: 6px; }
+  .action-list { list-style: none; padding: 0; }
+  .action-list li { padding: 4px 0 4px 14px; border-left: 2px solid #e5e7eb; margin-bottom: 4px; font-size: 13px; color: #374151; }
+
+  /* Notice */
+  .notice { background: #fffbeb; border-left: 4px solid #f59e0b; padding: 10px 14px; font-size: 12px; color: #78350f; margin-bottom: 16px; border-radius: 0 4px 4px 0; }
+
+  /* Footer */
+  footer { margin-top: 32px; padding-top: 16px; border-top: 2px solid #e5e7eb; font-size: 11px; color: #9ca3af; }
 </style>
 </head>
 <body>
 <div class="wrapper">
-  <!-- Brief content -->
-  <footer>
-    <p>Questions? Reply to this email — CLEO will respond.</p>
-    <p>— CLEO | Personal AI assistant to Eric Norton | Computerized Logistics for Executive Operations</p>
-  </footer>
+
+  <!-- NAV -->
+  <div class="nav">
+    <a href="#signals">Signals</a>
+    <a href="#defence">Defence</a>
+    <a href="#health">Health</a>
+    <a href="#space">Space</a>
+    <a href="#nuclear">Nuclear</a>
+    <a href="#minerals">Minerals</a>
+    <a href="#cross">Cross-Sector</a>
+    <a href="#partners">Partners</a>
+    <a href="#procurement">Procurement</a>
+    <a href="#sales">Sales</a>
+    <a href="#marketing">Marketing</a>
+    <a href="#risks">Risks</a>
+    <a href="#actions">Actions</a>
+  </div>
+
+  <!-- HEADER -->
+  <div class="brief-header">
+    <h1>Calian Intelligence Brief</h1>
+    <div class="meta">DATE · Coverage: COVERAGE_WINDOW · Calian Executive, Sales, and Marketing</div>
+  </div>
+
+  <!-- SECTIONS GO HERE -->
+
 </div>
 </body>
 </html>
 ```
 
-**Save to:** `/tmp/calian-marketing-brief-[YYYY-MM-DD].html`
+---
 
-**Verify file exists and has content before sending.**
+## Section Specifications
+
+### Section 1: Signals Dashboard `id="signals"`
+
+**Top of document. Most important section. Must be skimmable in 30 seconds.**
+
+A single table. 3–5 rows max. One row per top signal.
+
+Columns: `#` · `Signal` · `Sector` · `Geo` · `Audience` · `Action` · `Source`
+
+Rules:
+- Signal column: one bold sentence, no sub-bullets
+- Action: one imperative phrase ("Brief DIA account team", "Draft LinkedIn post", "Flag for exec")
+- Audience: pills only — `[EXEC]` `[SALES]` `[MKT]` `[ALL]`
+- Source: named hyperlink, verified
+
+---
+
+### Section 2: Category Briefings `id="defence"` etc.
+
+One subsection per category. If no strong items: one sentence "No high-confidence items today" — do not pad.
+
+**Categories:** Defence · Health · Space · Nuclear · Critical Minerals · Cross-Sector
+
+**Each item format — STRICT:**
+
+```
+[HEADLINE — bold, plain language, one line]
+[1–2 sentence summary. What happened. Why it matters to Calian.]
+[Audience pills] [Calian relevance tag] · Action: [one phrase] · [Source link]
+```
+
+**Calian relevance tags** (pick one):
+`Sales opportunity` · `Procurement signal` · `Marketing angle` · `Competitive threat` · `Partnership signal` · `Policy impact` · `Thought leadership` · `Executive awareness`
+
+**No narrative paragraphs. No "Implications by audience" sub-sections. No repeated headers.**
+
+3–5 items per category where available. Skip weak items.
+
+---
+
+### Section 3: Partner & Competitor Intelligence `id="partners"`
+
+Table only.
+
+Columns: `Organization` · `Type` · `Sector` · `Development` · `Calian relevance` · `Action` · `Source`
+
+Types: Competitor · Partner prospect · Prime contractor · Government buyer · OEM · Regulator · Research institution · Industry association
+
+Identify dynamically from today's research. Do not use a fixed list.
+
+---
+
+### Section 4: Procurement Watch `id="procurement"`
+
+Table only.
+
+Columns: `Item` · `Jurisdiction` · `Sector` · `Deadline` · `Opportunity/Risk` · `Source`
+
+Flag time-sensitive items with ⚠️. Include tenders, consultations, funding deadlines, capability plans.
+
+---
+
+### Section 5: Sales Intelligence `id="sales"`
+
+Table only.
+
+Columns: `Target/Account` · `Trigger` · `Buyer need` · `Calian offer area` · `Angle` · `Source`
+
+---
+
+### Section 6: Marketing Opportunities `id="marketing"`
+
+Compact list. 3–5 items.
+
+Each item:
+```
+► [Title/Theme]
+  Format: [LinkedIn / Blog / One-pager / Webinar / Campaign / ABM email]
+  Why now: [one sentence]
+  Source: [link]
+```
+
+---
+
+### Section 7: Risk Watchlist `id="risks"`
+
+Table only.
+
+Columns: `Risk` · `Sector` · `Why it matters` · `Likelihood` · `Impact` · `Monitor` · `Source`
+
+Use: `HIGH` `MED` `LOW` styled in color.
+
+---
+
+### Section 8: Recommended Actions `id="actions"`
+
+Three groups. **Bullet list only — no prose.**
+
+```
+EXECUTIVE
+• [Action]
+
+SALES / BD
+• [Action]
+
+MARKETING
+• [Action]
+```
+
+5–10 total actions. Practical and specific.
+
+---
+
+### Source List (end of document)
+
+Grouped by category. Named links only. No bare URLs.
+
+---
+
+## Writing Rules — Enforced
+
+1. **No paragraph per item.** Every item is headline + 1-2 sentences + tags + action + source.
+2. **No repeated content.** Signals Dashboard summarizes. Categories provide detail. No overlap.
+3. **No audience sub-sections per item.** Use pills. One line.
+4. **No "This is relevant because..."** — state the relevance directly.
+5. **Facts only.** Label inference explicitly: *(inferred)* or *(unverified)*.
+6. **No weak items.** Better to have 2 strong items than 5 padded ones.
+7. **Every link verified.** Fetch before including. No guesses.
+8. **Source per item.** Every item has at least one named hyperlink.
 
 ---
 
 ## Delivery
 
-### Recipients
-- eric.norton@calian.com
-- pierre.hage@calian.com
-
-### Subject Line
-```
-Calian Intelligence Brief — [Day, Month DD, YYYY]
-```
-
-### Send Command
+### File
 ```bash
 DATE=$(date +%Y-%m-%d)
 FILE="/tmp/calian-marketing-brief-${DATE}.html"
+```
 
+Verify file exists and is >10KB before sending. If not: post error to Discord, do not send.
+
+### Send Command
+```bash
 gog gmail send \
   --account cleo.clawdbot@gmail.com \
   --no-input \
@@ -416,28 +386,17 @@ gog gmail send \
 ```
 
 ### Error Handling
-- If file is empty or missing: **do not send** — post error to Discord
-- If send fails: post error to Discord
-- Do not report success unless a `message_id` is returned
+- File missing or <10KB → Discord error, no send
+- Send fails → Discord error
+- No `message_id` returned → treat as failure
+
+### Recipients
+- eric.norton@calian.com
+- pierre.hage@calian.com
 
 ---
 
 ## Schedule
 
 **Monday–Friday, 8:30 AM EST**
-
----
-
-## Recipients
-
-- eric.norton@calian.com
-- pierre.hage@calian.com
-
----
-
-## Notes
-
-- This brief is separate from the Cybersecurity Daily Brief — no overlap
-- Run on **Opus 4.7** — research depth requires maximum capability
-- Expected run time: 8–12 minutes
-- Quality over speed — this goes to executive leadership
+**Model: Opus 4.7**
