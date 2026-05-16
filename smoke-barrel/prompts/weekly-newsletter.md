@@ -55,6 +55,8 @@ Goal: Inspire and warm up Hal & James (Carl and Eric already onboard)
 - Use budget language
 - Make price consciousness references
 - Talk about "won't break the bank" or similar
+- **INVENT any event, session, or gathering detail** — if Eric mentions an upcoming event (e.g. a JimmyPour, overnighter, tasting session), only include details he explicitly confirmed. No assumptions about who's hosting, what's being poured, whether food is involved, how long it runs, or the vibe. If unsure: ask, don't assume. One wrong invented detail ruins the whole section.
+- **Invent bottle names or variants** — if a product cannot be confirmed to exist (Whiskybase search, verified LCBO/BSW listing, distillery website), do not include it. "Càirdeas Quarter Cask" is an example of a fabricated bottle — it doesn't exist. Only recommend bottles you can verify are real and available.
 
 **DO:**
 - Personalize based on taste/style
